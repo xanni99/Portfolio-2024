@@ -9,7 +9,7 @@ const Home = () => {
         <Col md={7} className="text-center"> 
           <h1>XANTHIA MASON</h1>
           <h2>Junior Full Stack Web Developer</h2>
-          <Button id="about-me-button" variant="outline-light" size="sm">About Me</Button>
+          <Button id="about-me-button" href="#about-me" variant="outline-light" size="sm">About Me</Button>
         </Col>
         <Col md={4} id="profile-image"> 
           <Image
