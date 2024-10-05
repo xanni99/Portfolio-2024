@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 const MyExperience = () => {
@@ -93,12 +93,12 @@ const MyExperience = () => {
         <Row className="justify-content-center mb-5">
           <Col className="text-center">
             <Button variant="primary" onClick={() => setShowMore(!showMore)}>
-              {showMore ? 'Show Less' : 'See More'}
+              {showMore ? 'Show Less' : 'My Full History'}
             </Button>
           </Col>
         </Row>
       )}
-      <Button id="my-experience-button" href="#my-experience" variant="outline-dark" size="sm">My Projects</Button>
+      <Button id="my-experience-button" href="#my-projects" variant="outline-dark" size="sm">My Projects</Button>
     </Container>
   );
 };

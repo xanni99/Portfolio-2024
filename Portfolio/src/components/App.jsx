@@ -2,6 +2,7 @@ import Home from "./Home"
 import NavBar from "./NavBar"
 import AboutMe from "./AboutMe"
 import MyExperience from "./MyExperience"
+import MyProjects from "./MyProjects"
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <Home/>
     <AboutMe/>
     <MyExperience/>
+    <MyProjects/>
     </>
     
   )

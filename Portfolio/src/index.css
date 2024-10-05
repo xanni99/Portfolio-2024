@@ -160,3 +160,47 @@ body {
   color: #555; /* Light color for description */
   text-align: left; /* Align description to the left */
 }
+
+
+/* My Projects */
+
+.my-projects-container {
+  height: 100vh;
+}
+
+#projects-title {
+  margin-top: 4rem;
+}
+
+.project-card {
+  transform: scale(0.45); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slick-center .project-card {
+  transform: scale(0.65); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-slide {
+  padding: 0 10px;
+  height: 80vh;
+}
+
+.slick-arrow {
+  z-index: 1;
+  color: blue;
+  margin: 3rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.card-buttons .btn {
+  margin-right: 5px;
+}
+
