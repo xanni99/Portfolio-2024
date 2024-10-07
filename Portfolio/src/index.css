@@ -5,34 +5,40 @@ body {
 
 /* NavBar */
 .nav-bar{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 .nav-bar .nav-link,
-.nav-bar .logo {
-    color: white;
+.nav-bar {
+    margin-left: 1rem;
+    color: rgb(0, 0, 0);
 }
+
 .navbar-collapse {
     text-align: center;
+    color: aquamarine;
   }
 
 
 /* Homepage */
 
 .banner {
-    height: 100vh; 
+    height: 90vh; 
     width: 100vw; 
-    background-color: black; 
-    color: rgb(41, 183, 176);
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
     display: flex; 
     align-items: center; 
   }
   
-  #profile-image {
+  #profile {
     max-width: 100%; 
     height: auto; 
     margin-right: 10px;
-    
+  }
+
+  #profile-image {
+    border-radius: 10%;
   }
   
   .banner h1,
@@ -41,10 +47,11 @@ body {
     padding: 10px; 
   }
 
-  .banner button {
-    color: rgb(224, 235, 243);
+  #about-me-button {
+    color: rgb(0, 0, 0);
     margin-top: 15px;
-    border-color: rgb(48, 228, 213);
+    background-color: rgb(132, 227, 188);
+    border-color: rgb(87, 200, 168);
   }
 
   .banner h1 {
@@ -58,13 +65,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 2rem;
   }
 
   .ice-breaker-container button {
     margin-top: 5px;
-    background-color: rgb(48, 228, 213);
+    background-color: rgb(132, 227, 188);
     color: black;
     border-color: black;
   }
@@ -90,20 +97,20 @@ body {
 
 /* About Me */
 .about-me-container {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   text-align: center;
   height: 100vh; 
 }
 
 
 .about-me-container h1 {
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 3rem;
   margin-bottom: 2rem;
 }
 
 .about-me-text {
-  color: rgb(233, 242, 240);
+  color: rgb(0, 0, 0);
   padding: 10px;
   margin-left: 10rem;
   margin-right: 10rem;
@@ -161,36 +168,48 @@ body {
   text-align: left; /* Align description to the left */
 }
 
+#my-projects-button {
+  margin-left: 2rem;
+}
+
+#full-history-button {
+  background-color: rgb(132, 227, 188);
+  color: black;
+  border-color: black;
+}
+
 
 /* My Projects */
 
 .my-projects-container {
   height: 100vh;
+  background-color: rgb(255, 255, 255);
 }
 
 #projects-title {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  padding: 1rem;
 }
 
 .project-card {
-  transform: scale(0.45); 
+  transform: scale(0.60); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .slick-center .project-card {
-  transform: scale(0.65); 
+  transform: scale(0.85); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-slide {
   padding: 0 10px;
-  height: 80vh;
+  height: 85vh;
+  width: 70%;
 }
 
 .slick-arrow {
   z-index: 1;
-  color: blue;
   margin: 3rem;
 }
 
@@ -200,7 +219,18 @@ body {
   align-items: center;
 }
 
-.card-buttons .btn {
-  margin-right: 5px;
+
+#read-more-button {
+  background-color: rgb(132, 227, 188);
+  color: black;
+  border-color: black;
+}
+
+#github-button {
+  margin-left: 5px;
+  background-color: transparent;
+  color: black;
+  border-color: white;
+  
 }
 

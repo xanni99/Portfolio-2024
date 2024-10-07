@@ -21,7 +21,7 @@ const IceBreaker = () => {
                 <Col md={4} className="my-3 d-flex justify-content-center">
                     <Card style={{ width: '18rem' }}>
                         <Card.Body className="text-center">
-                            <FontAwesomeIcon className="icons" icon={faLocationDot} size="5x" style={{ color: 'rgb(48, 228, 213)' }} />
+                            <FontAwesomeIcon className="icons" icon={faLocationDot} size="5x" style={{ color: '' }} />
                             <Card.Text className="card-text">
                                 {flipped[0] ? "This is true!" : "I was born on the Gold Coast."}
                             </Card.Text>
@@ -37,7 +37,7 @@ const IceBreaker = () => {
                 <Col md={4} className="my-3 d-flex justify-content-center">
                     <Card style={{ width: '20rem' }}>
                         <Card.Body className="text-center">
-                            <FontAwesomeIcon className="icons" icon={faLanguage} size="5x" style={{ color: 'rgb(48, 228, 213)' }} />
+                            <FontAwesomeIcon className="icons" icon={faLanguage} size="5x" style={{ color: '' }} />
                             <Card.Text className="card-text">
                                 {flipped[1] ? "This is false! - Unless you count programming languages ;)" : "I can speak more than one language."}
                             </Card.Text>
@@ -53,7 +53,7 @@ const IceBreaker = () => {
                 <Col md={4} className="my-3 d-flex justify-content-center">
                     <Card style={{ width: '18rem' }}>
                         <Card.Body className="text-center">
-                            <FontAwesomeIcon className="icons" icon={faEarthAmericas} size="5x" style={{ color: 'rgb(48, 228, 213)' }} />
+                            <FontAwesomeIcon className="icons" icon={faEarthAmericas} size="5x" style={{ color: '' }} />
                             <Card.Text className="card-text">
                                 {flipped[2] ? "This is true!" : "I have traveled to over 30 countries."}
                             </Card.Text>

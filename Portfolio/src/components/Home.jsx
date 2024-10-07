@@ -6,17 +6,18 @@ const Home = () => {
   return (
     <div className="banner">
       <Row className="align-items-center h-100"> 
-        <Col md={7} className="text-center"> 
+        <Col md={8} className="text-center"> 
           <h1>XANTHIA MASON</h1>
           <h2>Junior Full Stack Web Developer</h2>
-          <Button id="about-me-button" href="#about-me" variant="outline-light" size="sm">About Me</Button>
+          <Button id="about-me-button" href="#about-me" size="m">About Me</Button>
         </Col>
-        <Col md={4} id="profile-image"> 
+        <Col id="profile" md={3}> 
           <Image
-            src="/test6.jpg" 
+            src="/testg2.jpg" 
+            id="profile-image"
             alt="Banner"
             className="img-fluid" 
-          roundedCircle/>
+          />
         </Col>
       </Row>
     </div>

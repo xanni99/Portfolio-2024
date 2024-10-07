@@ -6,7 +6,6 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className="nav-bar">
       <Container>
-        <Navbar.Brand className="logo" href="#home">XM</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto justify-content-end">

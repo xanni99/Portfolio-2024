@@ -101,11 +101,11 @@ const MyProjects = () => {
                   {expandedProject === project.id ? project.longDescription : project.description}
                 </Card.Text>
                 <div className='card-buttons'>
-                    <Button variant="primary" onClick={() => toggleReadMore(project.id)}>
+                    <Button id="read-more-button" onClick={() => toggleReadMore(project.id)}>
                     {expandedProject === project.id ? "Read Less" : "Read More"}
                     </Button>
                     {project.link && (
-                    <Button variant="light" href={project.link} className="github-buttons">
+                    <Button id="github-button" href={project.link} className="github-buttons">
                       <FontAwesomeIcon icon={faGithub} size="2x" /> View this Project Repo
                     </Button>
                   )}
