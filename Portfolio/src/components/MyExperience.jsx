@@ -73,8 +73,8 @@ const MyExperience = () => {
         <Col>
           <h1 id="experience-page-title">EDUCATION AND EXPERIENCE</h1>
           <div className="resume-links">
-            <a id="my-resume-text" href="/my-resume.pdf" target="blank">My Resume</a>
-            <a id="resume-link" href="/my-resume.pdf" target="blank">
+            <a id="my-resume-text" href="/resume.pdf" target="blank">My Resume</a>
+            <a id="resume-link" href="/.pdf" target="blank">
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} href="/my-resume.pdf" target="blank"/>
             </a>
           </div>
