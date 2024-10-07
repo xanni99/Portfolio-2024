@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 const MyExperience = () => {
   // Combined data for education and work experience
@@ -66,9 +69,15 @@ const MyExperience = () => {
   return (
     <Container fluid id="my-experience" className="my-experience-container">
       {/* Centered Title */}
-      <Row className="justify-content-center text-center mb-5">
+      <Row className="justify-content-center text-center">
         <Col>
-          <h1 className="experience-title">EDUCATION AND EXPERIENCE</h1>
+          <h1 id="experience-page-title">EDUCATION AND EXPERIENCE</h1>
+          <div className="resume-links">
+            <a id="my-resume-text" href="/my-resume.pdf" target="blank">My Resume</a>
+            <a id="resume-link" href="/my-resume.pdf" target="blank">
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} href="/my-resume.pdf" target="blank"/>
+            </a>
+          </div>
         </Col>
       </Row>
 
@@ -88,14 +97,14 @@ const MyExperience = () => {
         ))}
       </Row>
 
-      {/* See More Button */}
+      {/* See More Button and Projects */}
       {experiences.length > 3 && (
         <Row className="justify-content-center mb-5">
           <Col className="text-center">
             <Button id="full-history-button" onClick={() => setShowMore(!showMore)}>
               {showMore ? 'Show Less' : 'My Full History'}
             </Button>
-            <Button id="my-projects-button" href="#my-projects" variant="outline-dark" size="m">
+            <Button id="my-projects-button" as={Link} to="/projects" variant="outline-dark" size="m">
               My Projects
             </Button>
           </Col>
