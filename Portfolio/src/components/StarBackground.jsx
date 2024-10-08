@@ -15,7 +15,7 @@ const StarBackground = () => {
       cnv.width = W;
       cnv.height = H;
 
-      // Optional: Fill the canvas background after resizing
+      // Fill the canvas background after resizing
       ctx.fillStyle = "#112";
       ctx.fillRect(0, 0, W, H);
     };

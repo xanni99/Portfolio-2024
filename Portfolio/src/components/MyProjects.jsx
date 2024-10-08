@@ -11,43 +11,43 @@ const MyProjects = () => {
           title: "Agent Statistics Dashboard",
           image: "./service.png",
           techStack: ["Javascript", "HTML", "CSS"],
-          description: "This is a portfolio website built using React to showcase personal projects and skills.",
-          longDescription: "This project is a full portfolio website built with React. It has a responsive design, a custom contact form, and showcases various projects I've worked on, including detailed descriptions and images of each project.",
+          description: "Built an agent statistics dashboard to display key KPIs and track goals.",
+          longDescription: "Developed an interactive dashboard that enables sales agents to visualise key performance metrics such as revenue, talk time, and leads over customisable time frames. The dashboard features advanced calculation functions for enhanced data insights, along with a target tracker that allows users to set three target goals and calculate necessary KPIs based on previous month performance data. Utilised dynamic data visualisation techniques to effectively present trends and statistics while ensuring seamless integration of backend data with the frontend interface.",
         },
         {
           id: 2,
           title: "Full Stack Website",
-          image: "./full-stack-app.png",
+          image: "./full-stack.png",
           techStack: ["MongoDB", "Express", "React", "NodeJs"],
-          description: "This is a portfolio website built using React to showcase personal projects and skills.",
-          longDescription: "This project is a full portfolio website built with React. It has a responsive design, a custom contact form, and showcases various projects I've worked on, including detailed descriptions and images of each project.",
+          description: "Created a full-stack 'Rental Activity' booking website as a group for a hypothetical client.",
+          longDescription: "Created a full-stack web application for activity rentals, featuring a user-friendly interface for browsing and booking activities. The site allows users to register, log in, and manage their bookings seamlessly. Integrated robust back-end functionalities for data management and retrieval, ensuring efficient processing of user requests. Employed modern technologies for a responsive design and implemented features such as user authentication and a secure payment system, enhancing the overall user experience and functionality of the platform.",
           link : "https://github.com/xanni99/T3A2-Full-Stack-App--GC-Activity-Rental-Website"
         },
         {
           id: 3,
           title: "Friend Library API",
-          image: "./friend-library.png",
+          image: "./api.png",
           techStack: ["Flask", "PostgreSQL", "SQLAlchemy", "Marshmallow"],
-          description: "An e-commerce store with user authentication and a shopping cart.",
-          longDescription: "This e-commerce store allows users to browse products, add them to a shopping cart, and complete purchases using a secure payment gateway. Features include user authentication, product filtering, and order management.",
+          description: "Created a 'friend library' API that acts as a library for your friend group's books.",
+          longDescription: "Developed a collaborative platform that allows users to create and manage a shared library of books. Users can add, remove, and search for books while tracking their reading progress. The application features a user-friendly interface and integrates a robust back-end to manage user data and book information effectively. Key functionalities include user authentication, book reviews, and rating systems, fostering a community-driven environment for book enthusiasts to connect and share recommendations.",
           link : "https://github.com/xanni99/Friend-Library"
         },
         {
           id: 4,
           title: "Baking Simulator Terminal App",
-          image: "./baking-sim.png",
+          image: "./python.png",
           techStack: ["Python"],
-          description: "A task management application to track daily tasks with real-time updates.",
-          longDescription: "This task management app provides real-time updates using Firebase. Users can create tasks, set deadlines, and mark tasks as completed. The app features a clean and user-friendly interface with notifications for overdue tasks.",
+          description: "Created a 'Baking Simulation' terminal app using Python.",
+          longDescription: "Developed a terminal-based application that simulates the operation of a baking machine, allowing users to manage the entire baking process. Users can add ingredients, select recipes, and perform machine maintenance tasks such as cleaning. The app guides users through the baking process, providing options to bake a variety of treats. This project showcases the integration of user inputs with functional programming, highlighting my skills in creating interactive applications.",
           link : "https://github.com/xanni99/Baking-Simulation--T1A3-Terminal-Application"
         },
         {
           id: 5,
           title: "Static Portfolio",
-          image: "./static-site.png",
+          image: "./static-portfolio.png",
           techStack: ["HTML", "CSS"],
-          description: "A social media dashboard for tracking analytics and user engagement.",
-          longDescription: "This dashboard visualizes user engagement statistics for various social media platforms. Built with Angular and Chart.js, it allows users to filter data by platform, date range, and engagement type. It provides insights through graphs and charts.",
+          description: "A static portfolio utilising HTML and CSS (my first ever project).",
+          longDescription: "This was my first ever 'coding' project for my diploma of IT. It involved creating a responsive web portfolio using static HTML and CSS. Although it is not my best work, I have left it in to showcase just how much I have improved since I started!",
           link : "https://github.com/xanni99/T1A2_Portfolio"
         }
     ];
@@ -105,7 +105,7 @@ const MyProjects = () => {
                     {expandedProject === project.id ? "Read Less" : "Read More"}
                     </Button>
                     {project.link && (
-                    <Button id="github-button" href={project.link} className="github-buttons">
+                    <Button id="github-button" href={project.link} target="blank" className="github-buttons">
                       <FontAwesomeIcon icon={faGithub} size="2x" /> View this Project Repo
                     </Button>
                   )}
