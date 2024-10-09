@@ -348,4 +348,9 @@ body {
   .experience-content {
     width: 100%;
   }
+
+  .about-me-text {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
