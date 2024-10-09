@@ -5,7 +5,7 @@ body {
 
 #root {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -53,6 +53,7 @@ body {
 
   .home-page h1 {
     font-size: 5rem;
+    font-family: Montserrat;
   }
   
   .home-page p {
@@ -174,14 +175,13 @@ body {
 }
 
 .experience-year {
-  font-size: 3rem; 
+  font-size: 2.5rem; 
   font-weight: bold; 
   color: #333;
   text-align: center; 
 }
 
 #experience-page-title {
-  font-size: 2rem;
   margin-top: 3rem
 }
 
@@ -275,7 +275,6 @@ body {
 
 .project-slide {
   padding: 0 10px;
-  height: 85vh;
   width: 70%;
 }
 
@@ -314,3 +313,39 @@ body {
   
 }
 
+
+
+@media (max-width: 1200px) {
+  .about-me-text {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .experience-title {
+    font-size: 1.4rem;
+  }
+
+  .experience-institution {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #profile-image {
+    width: 200px;
+  }
+
+  .experience-text {
+    align-items: center;
+  }
+}
+
+@media (max-width: 481px) {
+  #profile-image {
+    width: 200px;
+  }
+
+  .experience-content {
+    width: 100%;
+  }
+}
